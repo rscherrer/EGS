@@ -2,15 +2,15 @@
 % Please edit documentation in R/read_paramfile.R
 \name{read_paramfile}
 \alias{read_paramfile}
-\title{Read parameters}
+\title{Read a parameter file}
 \usage{
-read_paramfile(file, parnames = NULL)
+read_paramfile(filename, parnames = NULL)
 }
 \arguments{
-\item{file}{Path to the parameter file}
+\item{filename}{Path to the parameter file}
 
 \item{parnames}{Optional vector of parameter names}
 }
 \description{
-Read parameters
+Read a parameter file
 }
