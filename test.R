@@ -64,6 +64,19 @@ out$networks$ecotrait$weights %>% hist
 # Read architecture from the folder -- DONE
 read_architecture(simulations[2])
 
+# How many simulations did go extinct?
+find_extinct <- function(root) {
+
+  library(pbapply)
+  folders <- list.files(root, full.names = TRUE)
+  extincts <- pbsapply(folders, is_extinct)
+  if (any(extincts)) return (folders[extincts])
+  return (NULL)
+
+}
+find_extinct(simulations)
+find_extinct("/media/raphael/bigass/simulations/EGS")
+
 # Functions across simulations
 
 # Functio tell what simulations did have problems find_extinct / find_missing
