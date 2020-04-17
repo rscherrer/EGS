@@ -1,6 +1,6 @@
 #' Read locus-specific data
 #'
-#' @param filename Path to the folder
+#' @param folder Path to the folder
 #' @param variable What to read
 #'
 #' @export
